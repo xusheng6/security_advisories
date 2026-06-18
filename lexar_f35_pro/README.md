@@ -19,6 +19,9 @@ In the affected firmware, the drive returns the user-configured unlock password 
 ## Affected product
 
 - Lexar F35 Pro Fingerprint Encrypted USB Flash Drive, with firmware as shipped on 2025-08-17 (the date of initial report) and the bundled companion utility `FingerTool_lexar(Windows).exe` version 1.0.36.0.
+- Vendor product pages:
+  - <https://www.lexar.com/global/products/Lexar-JumpDrive-Fingerprint-F35-PRO-USB-3-2-Gen-1-Flash-Drive/>
+  - <https://americas.lexar.com/product/lexar-jumpdrive-fingerprint-f35-pro-flash-drive/>
 
 ## Technical details
 
@@ -60,6 +63,17 @@ All dates are UTC.
 | 2025-09-15 | Lexar confirms the issue and reports that a firmware update addressing the bug has been developed. |
 | 2025-10-19 | Reporter confirms the fix resolves the cleartext disclosure on the unit provided. |
 | TBD | CVE ID requested; this advisory will be updated when the ID is assigned. |
+
+## Distinct from CVE-2021-46390
+
+A prior advisory, [CVE-2021-46390](https://nvd.nist.gov/vuln/detail/CVE-2021-46390) / [GHSA-fcqg-mq6w-h3fh](https://github.com/bosslabdcu/Vulnerability-Reporting/security/advisories/GHSA-fcqg-mq6w-h3fh), describes a different weakness in the same Lexar F35 Pro product line and is easy to confuse with the issue reported here. The two are distinct:
+
+- **CVE-2021-46390** requires the attacker to attach a debugger to the companion utility and override the result of the authentication check inside the process, granting access without ever learning the password.
+- **This advisory** requires no debugger, no code patching, and no manipulation of the utility at runtime. The drive itself returns the user-configured password to the host in cleartext as soon as the bundled utility is launched, and the attacker simply reads it off the USB bus.
+
+## Related work
+
+This advisory is adjacent to, but not covered by, the reporter's re//verse talk *Breaking Encrypted USB Drives with Time-Travel Debugging* (<https://www.youtube.com/watch?v=Rv6jdnQ4YhY>), which examines other encrypted USB drives using time-travel debugging. The Lexar F35 Pro issue described here is a separate finding from the same broader line of research.
 
 ## Credit
 
