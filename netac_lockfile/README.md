@@ -11,4 +11,4 @@ The two defects are independently fixable and have different root causes, which 
 
 Both findings are presented in the reporter's talk *Breaking Encrypted USB Drives* at [RE//verse 2026](https://re-verse.io/) (March 5–7, 2026, Orlando, FL). Recording: <https://www.youtube.com/watch?v=Rv6jdnQ4YhY>.
 
-Discovered and reported by Xusheng Li, in a personal capacity. Reported to Netac on 2025-10-19; no vendor response or fix as of publication.
+Discovered and reported by Xusheng Li. Reported to Netac on 2025-10-19; no vendor response or fix as of publication.

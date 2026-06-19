@@ -5,7 +5,7 @@
 - **Product:** NetacLockFile file-encryption utility (`NetacLockFile.exe` v1.1.1.2), bundled with Netac encrypted USB flash drives
 - **CWE:** [CWE-321: Use of Hard-coded Cryptographic Key](https://cwe.mitre.org/data/definitions/321.html)
 - **CVSS v3.1:** 5.4 (Medium) — `AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N`
-- **Reporter:** Xusheng Li (independent research, not on behalf of any employer)
+- **Reporter:** Xusheng Li
 - **Status:** Reported to Netac on 2025-10-19; no vendor response and no fix as of publication.
 
 ## Summary
@@ -64,4 +64,4 @@ Presented in the reporter's talk *Breaking Encrypted USB Drives* at [RE//verse 2
 
 ## Credit
 
-Discovered and reported by Xusheng Li, in a personal capacity; this does not represent the views of the reporter's employer.
+Discovered and reported by Xusheng Li.

@@ -7,7 +7,7 @@
 - **Companion software:** `FingerTool_lexar(Windows).exe` version 1.0.36.0
 - **CWE:** [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
 - **CVSS v3.1:** 6.1 (Medium) — `AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N`
-- **Reporter:** Xusheng Li (independent research, not on behalf of any employer)
+- **Reporter:** Xusheng Li
 - **Status:** Fixed by the vendor on at least one unit confirmed by the reporter on 2025-10-19; broader availability of the updated firmware is not confirmed.
 
 ## Summary
@@ -77,4 +77,4 @@ This advisory is adjacent to, but not covered by, the reporter's re//verse talk 
 
 ## Credit
 
-Discovered and reported by Xusheng Li. This research was conducted in a personal capacity and does not represent the views of the reporter's employer.
+Discovered and reported by Xusheng Li.
