@@ -4,7 +4,7 @@ Two distinct vulnerabilities in **NetacLockFile** (`NetacLockFile.exe` version 1
 
 | Advisory | Defect | CWE | CVSS v3.1 |
 |---|---|---|---|
-| [partial-encryption.md](partial-encryption.md) | Only ~1/3 of the file body is encrypted; ~2/3 is stored in cleartext | [CWE-311](https://cwe.mitre.org/data/definitions/311.html) | 5.4 (Medium) |
+| [partial-encryption.md](partial-encryption.md) | Only ~1/3 of the file body is encrypted; ~2/3 is stored in cleartext | [CWE-312](https://cwe.mitre.org/data/definitions/312.html) | 5.4 (Medium) |
 | [hardcoded-key.md](hardcoded-key.md) | The encrypted portion uses a fixed AES key hardcoded in the binary, independent of the user password | [CWE-321](https://cwe.mitre.org/data/definitions/321.html) | 5.4 (Medium) |
 
 The two defects are independently fixable and have different root causes, which is why two CVE IDs are requested. Together they allow complete recovery of the original plaintext from any container file the tool produces.

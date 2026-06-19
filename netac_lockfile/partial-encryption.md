@@ -3,7 +3,7 @@
 - **CVE ID:** CVE-PENDING *(requested; will be updated when assigned)*
 - **Vendor:** Netac Technology Co., Ltd.
 - **Product:** NetacLockFile file-encryption utility (`NetacLockFile.exe` v1.1.1.2), bundled with Netac encrypted USB flash drives
-- **CWE:** [CWE-311: Missing Encryption of Sensitive Data](https://cwe.mitre.org/data/definitions/311.html)
+- **CWE:** [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
 - **CVSS v3.1:** 5.4 (Medium) — `AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N`
 - **Reporter:** Xusheng Li
 - **Status:** Reported to Netac on 2025-10-19; no vendor response and no fix as of publication.
